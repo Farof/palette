@@ -1,0 +1,96 @@
+html, body, div, p, span, ul, ol, li, img, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #3E3D40;
+  font-size: 1em;
+}
+
+.rowContainer {
+  display: inline-block;
+}
+
+.row {
+  position: relative;
+}
+
+.col {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.target {
+  background: url(target.png) no-repeat;
+  height: 11px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 11px;
+}
+
+#demo {
+  background-color: white;
+  height: 256px;
+  width: 256px;
+}
+
+#demo {
+
+}
+
+#infos {
+  height: 256px;
+  width: 256px;
+  position: absolute;
+}
+
+#infos input {
+
+}
+
+#infos input ~ input {
+  margin-top: 10px;
+}
+
+#save {
+  
+}
+
+#colors {
+  position: relative;
+}
+
+.saved-color-box,
+.saved-color {
+  height: 90px;
+  width: 90px;
+}
+
+.saved-color-box {
+  display: inline-block;
+  margin: 5px;
+}
+
+.saved-color {
+  cursor: move;
+  position: relative;
+}
+
+.saved-color > .close {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 20px;
+}
+
+.saved-color:hover > .close {
+
+}
