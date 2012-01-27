@@ -73,8 +73,8 @@
         removeSaved: function (node, colorNode) {
           var has = !!this.colors[node.color];
           if (has) {
-            colorNode.dispose();
-            node.dispose();
+            colorNode.unload();
+            node.unload();
             delete this.colors[node.color];
             this.saveColors();
           }
@@ -225,11 +225,11 @@
         configureCanvas: function (config, key) {
           var
           box = config.box,
-          pos = box.getPos(),
+          pos = box.getPosition(),
           move = function (e) {
             var
-              x = Math.min(Math.max(e.clientX - pos.x, 5) - 5, config.canvas.width),
-              y = Math.min(Math.max(e.clientY - pos.y, 5) - 5, config.canvas.height),
+              x = Math.min(Math.max(e.clientX - pos.left, 5) - 5, config.canvas.width),
+              y = Math.min(Math.max(e.clientY - pos.top, 5) - 5, config.canvas.height),
               settings = {};
 
             // console.log('update: ', x, y, Math.round(x / config.canvas.width * 255), Math.round(y / config.canvas.height * 255));

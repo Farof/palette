@@ -255,7 +255,7 @@
         } else {
           matches = this.rgbaReg.exec(rgba);
           if (matches && matches[1]) {
-            return matches[1].replace(/(,\s|\s|,)/g, ':').split(':').all(function (match, index) {
+            return matches[1].replace(/(,\s|\s|,)/g, ':').split(':').every(function (match, index) {
               return match >= 0 && match <= 255;
             }) && (matches[2] ? (matches[2] >= 0 && matches[2] <= 1) : true);
           }
