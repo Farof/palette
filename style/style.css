@@ -25,7 +25,7 @@ body {
 }
 
 .target {
-  background: url(target.png) no-repeat;
+  background: url("../img/target.png") no-repeat;
   height: 11px;
   left: 0px;
   position: absolute;
